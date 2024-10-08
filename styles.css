@@ -277,8 +277,8 @@ p{
     TO DO:
     select the images and SVGs by tag names
 */
-/* ----- */
-img{
+/* ----- This one */
+img, svg{
     display: block;
     width: 100%;
     height: auto;
@@ -408,7 +408,7 @@ h2.third-h2{
     select all of the inputs, labels, select dropdowns and text areas on the page by tag name
 */
 /* ----- */
-input, label{
+input, label, select, textarea{
     display: block;
     width: 95%;
     margin: 0.5rem auto;
@@ -422,7 +422,7 @@ input, label{
     select all of the inputs and selects by tag name
 */
 /* ----- */
-input{
+input, select{
     height: 2rem;
     border: 2px solid var(--dk-gray);
 }
@@ -502,7 +502,7 @@ input[type="submit"]{
     select all of the submit buttons on hover (by tag name/type attribute name) on the page
 */
 /* ----- */
-input[type="submit"]:hoover{
+input[type="submit"]:hover{
     box-shadow: var(--box-shadow-sm);
     color: var(--purple);
     background-color: var(--lt-gray);
@@ -681,6 +681,11 @@ input[type="submit"]:focus{
     gap: 12px;
 }
 
+
+#software h3{
+    grid-column: 1/-1;
+    text-align: center;
+}
 /* ----- */
 /* 
     TO DO:
